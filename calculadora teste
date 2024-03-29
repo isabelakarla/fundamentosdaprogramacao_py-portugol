@@ -1,0 +1,60 @@
+inteiro num1, num2, total, opcao
+  caracter resp
+  
+
+escreva("olá, seja bem-vindo a calculadora da bela :)")
+escreva ("\naqui nós apenas trabalhamos com operações básicas!")
+escreva ("\nvamos começar? (s/n) ")
+leia(resp)
+
+enquanto(resp != 'N' e resp != 'n') {
+escreva ("\n1- SOMA")
+escreva ("\n2- SUBTRAÇÃO")
+escreva ("\n3- MULTIPLICAÇÃO")
+escreva ("\n4- DIVISÃO")
+escreva ("\nqual operação você deseja realizar? ")
+leia (opcao)
+
+
+
+escolha (opcao){
+
+caso 1:
+escreva ("informe dois números: ")
+leia (num1, num2)
+total = num1 + num2
+escreva ("o total obtido da adição foi: ", total) 
+pare
+
+caso 2: 
+escreva ("informe dois números: ")
+leia (num1, num2)
+total = num1 - num2
+escreva ("o total obtido da subtração foi: ", total)
+pare
+
+caso 3:
+escreva ("informe dois números: ")
+leia (num1, num2)
+total = num1 * num2
+escreva ("o total obtido da multiplicação foi: ", total) 
+pare
+
+caso 4:
+escreva ("informe dois números: ")
+leia (num1, num2)
+total = num1 / num2
+escreva ("o total obtido da divisão foi: ", total) 
+pare
+
+caso contrario: 
+escreva ("opção inválida!")
+pare
+}
+escreva ("\nvocê deseja fazer outra operação? (s/n) ")
+leia (resp)
+}
+escreva ("\nobrigada por usar nossa calculadora! volte sempre que precisar :p")
+
+  }
+}
