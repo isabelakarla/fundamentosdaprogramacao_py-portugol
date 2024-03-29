@@ -1,0 +1,64 @@
+programa {
+  funcao inicio() {
+  inteiro quantidade, produto
+  real total=0, valor_unidade
+  caracter resposta
+  cadeia nome
+  escreva ("oiiiii, qual o seu nome? ")
+  leia (nome)
+  escreva (nome , ", você deseja fazer um pedido? (S/N)")
+  leia (resposta)
+
+  enquanto(resposta != 'N' e resposta != 'n') {
+   escreva ("MENU DO CINEMINHA :)")
+   escreva ("\ncódigo 100 - PIPOCA - R$20")
+   escreva ("\ncódigo 101 - REFRIGERANTE - R$9.30")
+   escreva ("\ncódigo 102 - CHOCOLATE - R$5.50")
+   escreva ("\ncódigo 103 - ÁGUA - R$2")
+   escreva ("\nqual item você deseja? ")
+   leia (produto)
+  
+   escolha (produto) {
+   caso 100:
+   escreva ("escreva a quantidade que você deseja: ") 
+   leia (quantidade)
+   valor_unidade = 20
+   total = total + (quantidade*valor_unidade)
+   pare
+
+ caso 101:
+escreva ("escreva a quantidade que você deseja: ") 
+   leia (quantidade)
+   valor_unidade = 9.30
+   total = total + (quantidade*valor_unidade)
+   pare
+
+   caso 102:
+   escreva ("escreva a quantidade que você deseja: ") 
+   leia (quantidade)
+   valor_unidade = 5.50
+   total = total + (quantidade*valor_unidade)
+  pare
+
+   caso 103:
+   escreva ("escreva a quantidade que você deseja: ") 
+   leia (quantidade)
+   valor_unidade = 2
+   total = total + (quantidade*valor_unidade)
+  
+   
+   pare
+
+   caso contrario: 
+   escreva ("opção inválida!")
+
+ 
+   }
+   
+    escreva ("você deseja fazer outro pedido? (S/N)")
+   leia (resposta)
+   escreva ("o total da sua compra foi: ", total)
+ 
+ }
+  }
+}
