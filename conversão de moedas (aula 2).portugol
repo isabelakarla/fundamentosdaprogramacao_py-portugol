@@ -1,0 +1,48 @@
+programa {
+  funcao inicio() {
+    real variavel1, variavel2, item, opcao, total
+    caracter resposta
+    cadeia nome
+
+escreva ("informe seu nome: ")
+leia (nome)
+escreva ("\nolá!")
+escreva ("\nseja bem-vinde ao nosso conversor de moedas :) " ,nome)
+escreva ("\nvamos começar?(s/n) ")
+leia (resposta)
+
+enquanto (resposta!= 'N' e resposta != 'n'){
+escreva ("\n1- conversão DÓLAR PARA REAL")
+escreva ("\n2- conversão REAL PARA DÓLAR")
+escreva ("\nqual item acima você deseja? ")
+leia (opcao)
+
+escolha (opcao){
+
+caso 1:
+escreva ("\no item escolhido por você foi: conversão DÓLAR PARA REAL")
+escreva ("\npor favor, informe o valor desejado: ")
+leia (variavel1)
+total = variavel1 * 5.02
+escreva ("\no total em reais foi:R$ ", total)
+pare
+
+caso 2:
+escreva ("\no item escolhido por você foi: conversão REAL PARA DÓLAR")
+escreva ("\npor favor, informe o valor desejado: ")
+leia (variavel2)
+total = variavel2 / 5.02
+escreva ("\no total em dólares foi:$ ", total)
+pare
+
+caso contrario:
+escreva ("opção inválida :( que tal recomeçarmos?)")
+pare
+}
+
+escreva ("\n\nvocê deseja escolher outro item?(s/n) ")  
+leia (resposta)
+     }
+escreva ("\nobrigada por usar nosso conversor :)))")
+  }
+}
