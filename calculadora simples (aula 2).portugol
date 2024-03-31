@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    real variavel, total
+
+    escreva ("olá, seja bem-vindo ao nosso conversor de moedas! eua - br :)")
+    escreva ("\ninforme o valor desejado: R$ ")
+    leia (variavel)
+    escreva ("estamos convertendo...")
+    total = variavel * 5.02
+    escreva ("\no valor em reais é: R$ ", total)
+  }
+}
