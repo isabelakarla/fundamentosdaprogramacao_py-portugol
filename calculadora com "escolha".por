@@ -2,27 +2,27 @@ programa {
   funcao inicio() {
     inteiro num_1 , num_2 , opcao
 
-    escreva ("Informe dois números: ")
+    escreva ("Informe dois nÃºmeros: ")
     leia (num_1 , num_2)
 
     escreva ("Calculadora da Bela :)")
     escreva ("\n 1 - Soma")
-    escreva ("\n 2 - Multiplicação")
-    escreva ("\n 3 - Subtração")
+    escreva ("\n 2 - MultiplicaÃ§Ã£o")
+    escreva ("\n 3 - SubtraÃ§Ã£o")
     leia (opcao)
 
     escolha (opcao) {
     caso 1:
-    escreva ("\nA soma é: " , num_1 + num_2)
+    escreva ("\nA soma Ã©: " , num_1 + num_2)
     pare
     caso 2:
-    escreva ("\nA multiplicação é: " , num_1 * num_2)
+    escreva ("\nA multiplicaÃ§Ã£o Ã©: " , num_1 * num_2)
     pare
     caso 3:
-    escreva ("\nA subtração é: " , num_1 - num_2)
+    escreva ("\nA subtraÃ§Ã£o Ã©: " , num_1 - num_2)
     pare
     caso contrario:
-    escreva ("Opção inválida :(")
+    escreva ("OpÃ§Ã£o invÃ¡lida :(")
     
     
     
